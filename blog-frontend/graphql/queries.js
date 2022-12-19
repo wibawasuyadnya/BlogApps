@@ -20,8 +20,8 @@ query {
 `;
 
 const GET_ALL_POSTS = gql`
-query {
-    posts {
+query{
+    posts(sort:"publishedAt:desc") {
       data {
         attributes {
           title
