@@ -7,7 +7,7 @@ query {
         attributes {
           slug
           category {
-            data { 
+            data {
               attributes {
                 name
               }
@@ -41,6 +41,7 @@ query {
               }
             }
           }
+          publishedAt
         }
       }
     }
@@ -62,6 +63,13 @@ query ($slugUrl: String!) {
             data {
               attributes{
                  url
+              }
+            }
+          }
+          category {
+            data { 
+              attributes {
+                name
               }
             }
           }
